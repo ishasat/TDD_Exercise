@@ -1,15 +1,21 @@
 
 public class FizzBuzz {
 	public String fizzBuzz(Integer inputNum) {
-		if((inputNum%3==0) && (inputNum%5==0)){
-			return "fizzbuzz";
-		}else if(inputNum%3==0){
-			return "fizz";
-		}else if(inputNum%5==0){
-			return "buzz";
+		boolean divisibleByThree = inputNum % 3 == 0;
+		boolean divisibleByFive = inputNum % 5 == 0;
+		String returnValue = "";
+
+		if(divisibleByThree && divisibleByFive){
+			returnValue = "fizzbuzz";
+		}else if(divisibleByThree){
+			returnValue = "fizz";
+		}else if(divisibleByFive){
+			returnValue = "buzz";
+		}else{
+			returnValue = inputNum.toString();
 		}
 
-		return inputNum.toString();
+		return returnValue;
 	}
 }
 
