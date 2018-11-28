@@ -16,5 +16,11 @@ public class FizzBuzzTest {
 		assertEquals("2", fizzBuzz.fizzBuzz(2));
 	}
 
+	@Test
+	public void testWhenPassedNumDivisibleByThreeReturnFizz(){
+		FizzBuzz fizzBuzz= new FizzBuzz();
+		assertEquals("fizz", fizzBuzz.fizzBuzz(3));
+		assertEquals("fizz", fizzBuzz.fizzBuzz(6));
+	}
 }
 
