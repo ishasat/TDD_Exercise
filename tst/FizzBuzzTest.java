@@ -31,5 +31,11 @@ public class FizzBuzzTest {
 		assertEquals("buzz", fizzBuzz.fizzBuzz(5));
 		assertEquals("buzz", fizzBuzz.fizzBuzz(10));
 	}
+
+	@Test
+	public void testWhenPassedNumDivisibleByThreeAndFiveReturnFizzBuzz(){
+		assertEquals("fizzbuzz", fizzBuzz.fizzBuzz(15));
+		assertEquals("fizzbuzz", fizzBuzz.fizzBuzz(30));
+	}
 }
 
